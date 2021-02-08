@@ -10,7 +10,16 @@
     <h1>Menssagem Padrão</h1>
 
     <script>
-        alert("Hello World") 
+        alert("Hello World")
+       var a = confirm("Deseja realmente deletar o conteúdo?")
+        if (a==true){
+            document.writeln("o arquivo foi deletado")
+        }else{
+            document.writeln("Seu arquivo continua Salvo!")
+        }
+       var nome = prompt("Qual o seu nome?")
+       alert(nome)
+       document.writeln(`<br>Seja bem vindo ${nome} !! `)
     </script>
 </body>
 </html>
