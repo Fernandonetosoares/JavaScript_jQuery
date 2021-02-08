@@ -11,8 +11,25 @@
     <h2>Primeiro programa em jQuery</h2>
     <script src="jquery-3.5.1.min.js"></script>
     <script>
-        $(document).ready(function(){
+       /*
+       $(document).ready(function(){
           alert("Hello World!")  
+        })
+        
+        jQuery(function(){
+            alert("Hello World!")
+        })
+        */
+        jQuery(function(){
+            jQuery("h1").click(function(){
+                alert("Clicou no h1")
+            })
+        })
+        jQuery(function(){
+            jQuery("h2").click(function(){
+                alert("este é um subtítulo 'h2' ")
+                
+            })
         })
     </script>
     
