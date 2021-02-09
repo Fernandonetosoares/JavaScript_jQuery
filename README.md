@@ -39,5 +39,5 @@
 
 <img src="https://logodownload.org/wp-content/uploads/2017/10/jquery-logo.png" height="80">
 
-<a href="https://www.udemy.com/course/draft/811834/learn/lecture/5279644#overview" target="_blank" rel="externo">Curso JavaScript + jQuery</a>
+<a href="https://www.udemy.com/course/draft/811834/learn/lecture/5279644#overview" target="_blank" rel="external">Curso JavaScript + jQuery</a>
 
