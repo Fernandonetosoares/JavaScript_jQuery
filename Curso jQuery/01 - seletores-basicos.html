@@ -12,9 +12,9 @@
     <div>Sou uma div</div>
     <p class="paragrafo"> Sou um  &lt; p &gt; com a classe .paragrafo</p>
     <p id="paragrafo"> Sou um &lt; p &gt; com ID #paragrafo </p>
-    <span>Sou um span (1)</span>
-    <span>Sou um span (2)</span>
-    <span>Sou um span (3)</span>
+    <span>Sou um span (1)</span> <br>
+    <span>Sou um span (2)</span> <br>
+    <span>Sou um span (3)</span> <br>
     <hr>
     <h1>Multiple Selector:</h1>
     <p class="class1"> &lt; p &gt;  com .class1</p>
@@ -23,7 +23,19 @@
     <script>
         //Inicio do jQuery
         $(function(){
+            //jQuery("*").css("color", "blue")
+            jQuery(".paragrafo")
+                    .css("color", "red")
+                    .css("border", "2px solid red")
+                    .click(function(){
+                        alert("Clicou no elemento que tem a classe .paragrafo")
+                    })
+            jQuery("#paragrafo")
+                    .css({"color": "blue", "border": "2px solid blue"})  
+            jQuery("span").css("color", "green")  
             
+            jQuery(".class1, .class2, .class3").css("color", "yellow")
+  
         })
     </script>
 </body>
