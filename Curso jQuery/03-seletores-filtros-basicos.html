@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de filtros básicos </title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<h1>:eq, :first, :last</h1>
+<body>
+    <div>Sou a primeira div</div>
+    <div>Sou a segunda div</div>
+    <div>Sou a terceira div</div>
+
+    <hr>
+    <span>Sou o primeiro span</span><br>
+    <span>Sou o segundo span</span><br>
+    <span>Sou o terceiro span</span><br>
+    <span>Sou o quarto span</span><br>
+    <span>Sou o quinto span</span><br>
+    <span>Sou o sexto span</span><br>
+
+    <hr>
+    <h1>:header</h1>
+    <h1>Sou título h1</h1>
+    <h2>Sou título h2</h2>
+    <h3>Sou título h3</h3>
+    <h4>Sou título h4</h4>
+    <h5>Sou título h5</h5>
+    <h6>Sou título h6</h6>
+
+    <hr>
+    <h1>:lang</h1>
+    <p lang="pt-br">Linguagem "pt-br"</p>
+    <p lang="en">Linguagem "en"</p>
+    <p lang="us">Linguagem "us"</p>
+    <p lang="pt">Linguagem "pt"</p>
+
+    <hr>
+    <h1>:odd</h1>
+    <table border="1">
+        <tr>
+            <td>Coluna #0</td>
+        </tr>
+        <tr>
+            <td>Coluna #1</td>
+        </tr>
+        <tr>
+            <td>Coluna #2</td>
+        </tr>
+        <tr>
+            <td>Coluna #3</td>
+        </tr>
+
+    </table>
+    <script>
+        //Inicio do jQuery
+        $(function(){
+           jQuery("div:eq(1)").css("border", "1px solid #444") 
+
+           jQuery("div:first").css({"border": "1px solid blue","color":"blue"})
+
+           jQuery("div:last").css({"border": "1px solid red","color":"red"})
+
+           jQuery("span:gt(3)").css("color","yellow")
+
+           jQuery("span:lt(2)").css("color","green")
+
+           jQuery(":header").css("color", "blue")
+
+           jQuery("p:lang('pt')").css("color", "lightskyblue")
+
+           jQuery("td:odd").css("background-color", "blue").css("color","white")
+        })
+    </script>
+</body>
+</html>
