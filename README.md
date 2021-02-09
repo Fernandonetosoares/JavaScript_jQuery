@@ -2,6 +2,27 @@
  
 <h1>Uma Sequencia de códigos de programa em JavaScript:</h1>
 
+<h2>nos códigos em javaScript contém:</h2>
+
+<ol>
+    <li>Padrão Hello World!; 
+    <li>Variáveis e Constantes;
+    <li>Arrays e Objetos;
+    <li>If e Else;
+    <li>Operadores;
+        <ol>
+            <li>Operadores Matemáticos;
+            <li>Operadores de Comparação;
+            <li>Operadores de Atribuição;
+        </ol>
+    <li>Estruturas de repetição;
+        <ol>
+            <li>for;
+            <li>while- do;
+            <li>forEach;
+        </ol>
+    <li>Funções;
+</ol>
 <p>
     <i>
         JavaScript é uma <strong>linguagem de programação</strong> interpretada estruturada.
