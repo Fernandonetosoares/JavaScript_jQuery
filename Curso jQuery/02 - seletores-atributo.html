@@ -9,9 +9,9 @@
 </head>
 <body>
     <h1>[name="value"], [name!= "value"]:</h1>
-    <div id="teste">Sou uma div com id #teste1</div>
-    <div id="teste1">Sou uma div com id #teste2</div>
-    <div id="teste2">Sou uma div com id #teste3</div>
+    <div id="teste">Sou uma div com id #teste</div>
+    <div id="teste1">Sou uma div com id #teste1</div>
+    <div id="teste2">Sou uma div com id #teste2</div>
     <div id="teste3">Sou uma div com id #teste3</div>
     <div id="teste4">Sou uma div com id #teste4</div>
     
@@ -25,13 +25,13 @@
     <h1>[name$="value"]:</h1>
     <p name="curso-php"> &lt;p&gt; com nome=curso-php</p>
     <p name="desenvolvimento"> &lt;p&gt; com nome=desenvolvimento</p>
-    <p name="php-samurai"> &lt;p&gt; com nome=especializati</p>
+    <p name="php-samurai"> &lt;p&gt; com nome=php-samurai</p>
 
     <hr>
     <h1>[name~="value"]:</h1>
     <span name="classespan">"SPAN" com o nome=classespan</span> <br>
     <span name="span nome">"SPAN" com o nome=span nome</span> <br>
-    <span name="span texto">"SPAN" com o nome=span texto</span> <br>
+    <span name="spantexto">"SPAN" com o nome=spantexto</span> <br>
     <span name="texto span">"SPAN" com o nome=texto span</span> <br>
 
     
@@ -43,7 +43,7 @@
     <span name="us">"SPAN" com o nome=us</span> <br>
 
     <hr>
-    <h1>Has Attribute Selector [name]:</h1>
+    <h1>[name*="value"]:</h1>
     <span name="buscachaveteste">"SPAN" com o nome=buscachaveteste</span> <br>
     <span name="span-qualquer">"SPAN" com o nome=span-qualquer</span> <br>
     <span name="chave">"SPAN" com o nome=chave</span> <br>
@@ -51,15 +51,30 @@
 
     <hr>
     <h1>Has Attribute Selector [name]:</h1>
-    <span name="nome1">"SPAN" com o nome=nome1</span> <br>
-    <span name="nome2">"SPAN" com o nome=nome2</span> <br>
-    <span name="nome3">"SPAN" com o nome=nome3</span> <br>
-    <span name="nome4">"SPAN" com o nome=nome4</span> <br>
-
+    <span atributo="nome1">"SPAN" com o atributo=nome1</span> <br>
+    <span atributo="nome2">"SPAN" com o atributo=nome2</span> <br>
+    <span atributo="nome3">"SPAN" com o atributo=nome3</span> <br>
+    <span atributo="nome4">"SPAN" com o atributo=nome4</span> <br>
+    
     <script>
         //Inicio do jQuery
         $(function(){
+            jQuery('[id="teste"]').css("color", "red")
+            //jQuery('[id!="teste"]').css("color", "blue")
+
+            jQuery('[name^="esp"]').css("color", "green")
             
+            jQuery('[name$="php"], [name$="samurai"]').css("color","blue")
+
+            jQuery('[name~="span"]').css("color","yellow")
+
+            jQuery('[name|="pt"]').css("color","blue")
+
+            jQuery('[name*="ha"]').css("color","darkred")
+
+            jQuery("span[atributo]").css("color","darkblue")
+            
+
         })
     </script>
 
