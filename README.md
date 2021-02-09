@@ -1,6 +1,6 @@
 # JavaScript_jQuery
  
-Uma Sequencia de códigos de programa em JavaScript:
+<h1>Uma Sequencia de códigos de programa em JavaScript:</h1>
 
 <p>
     <i>
@@ -11,7 +11,7 @@ Uma Sequencia de códigos de programa em JavaScript:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" height="150">
 
-E também programas em jQuery
+<h1>E também programas em jQuery</h1>
 
 <p><i><strong>jQuery</strong> é uma biblioteca de funções JavaScript que interage com o HTML, desenvolvida para simplificar os scripts interpretados no navegador do cliente. Usada por cerca de 74.4% dos 10 mil sites mais visitados do mundo, jQuery é a mais popular das bibliotecas JavaScript</i></p>
 
