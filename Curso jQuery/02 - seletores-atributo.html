@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Atributo</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <h1>[name="value"], [name!= "value"]:</h1>
+    <div id="teste">Sou uma div com id #teste1</div>
+    <div id="teste1">Sou uma div com id #teste2</div>
+    <div id="teste2">Sou uma div com id #teste3</div>
+    <div id="teste3">Sou uma div com id #teste3</div>
+    <div id="teste4">Sou uma div com id #teste4</div>
+    
+    <hr>
+    <h1>[name^="value"]:</h1>
+    <p name="especialização"> &lt;p&gt; com nome=especialização</p>
+    <p name="programação"> &lt;p&gt; com nome=programação</p>
+    <p name="especializati"> &lt;p&gt; com nome=especializati</p>
+
+    <hr>
+    <h1>[name$="value"]:</h1>
+    <p name="curso-php"> &lt;p&gt; com nome=curso-php</p>
+    <p name="desenvolvimento"> &lt;p&gt; com nome=desenvolvimento</p>
+    <p name="php-samurai"> &lt;p&gt; com nome=especializati</p>
+
+    <hr>
+    <h1>[name~="value"]:</h1>
+    <span name="classespan">"SPAN" com o nome=classespan</span> <br>
+    <span name="span nome">"SPAN" com o nome=span nome</span> <br>
+    <span name="span texto">"SPAN" com o nome=span texto</span> <br>
+    <span name="texto span">"SPAN" com o nome=texto span</span> <br>
+
+    
+    <hr>
+    <h1>[name|="value"]:</h1>
+    <span name="pt">"SPAN" com o nome=pt</span> <br>
+    <span name="en">"SPAN" com o nome=en</span> <br>
+    <span name="pt-br">"SPAN" com o nome=pt-br</span> <br>
+    <span name="us">"SPAN" com o nome=us</span> <br>
+
+    <hr>
+    <h1>Has Attribute Selector [name]:</h1>
+    <span name="buscachaveteste">"SPAN" com o nome=buscachaveteste</span> <br>
+    <span name="span-qualquer">"SPAN" com o nome=span-qualquer</span> <br>
+    <span name="chave">"SPAN" com o nome=chave</span> <br>
+    <span name="novoteste">"SPAN" com o nome=novoteste</span> <br>
+
+    <hr>
+    <h1>Has Attribute Selector [name]:</h1>
+    <span name="nome1">"SPAN" com o nome=nome1</span> <br>
+    <span name="nome2">"SPAN" com o nome=nome2</span> <br>
+    <span name="nome3">"SPAN" com o nome=nome3</span> <br>
+    <span name="nome4">"SPAN" com o nome=nome4</span> <br>
+
+    <script>
+        //Inicio do jQuery
+        $(function(){
+            
+        })
+    </script>
+
+
+</body>
+</html>
