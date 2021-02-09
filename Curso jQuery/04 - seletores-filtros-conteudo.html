@@ -31,7 +31,10 @@
         // Inicio do jQuery
         $(function(){
             jQuery("div:contains('João')").css("border", "2px solid red")
+
             jQuery("div:empty").css("border", " 5px solid green").html("Agora nao sou uma div vazia")
+
+            jQuery("div:has(p)").css("border", "4px solid blue")
         })
     </script>
 </body>
