@@ -2,7 +2,7 @@
  
 <h1>Uma Sequencia de códigos de programa em JavaScript:</h1>
 
-<h2>nos códigos em javaScript contém:</h2>
+<h2>Nos códigos em javaScript contém:</h2>
 
 <ol>
     <li>Padrão Hello World!; 
@@ -23,6 +23,7 @@
         </ol>
     <li>Funções;
 </ol>
+<hr>
 <p>
     <i>
         JavaScript é uma <strong>linguagem de programação</strong> interpretada estruturada.
@@ -37,4 +38,6 @@
 <p><i><strong>jQuery</strong> é uma biblioteca de funções JavaScript que interage com o HTML, desenvolvida para simplificar os scripts interpretados no navegador do cliente. Usada por cerca de 74.4% dos 10 mil sites mais visitados do mundo, jQuery é a mais popular das bibliotecas JavaScript</i></p>
 
 <img src="https://logodownload.org/wp-content/uploads/2017/10/jquery-logo.png" height="80">
+
+<a href="https://www.udemy.com/course/draft/811834/learn/lecture/5279644#overview" target="_blank" rel="external">Curso JavaScript + jQuery</a>
 
