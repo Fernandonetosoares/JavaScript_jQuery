@@ -8,6 +8,31 @@
     <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
+    <h1>:contains</h1>
+    <div>Meu nome é João</div>
+    <div>Sou o fundador da MIT-Service</div>
+    <div>My name is João</div>
+
+    <hr>
+    <h1>:empty</h1>
+    <div>Sou uma div com conteúdo</div>
+    <div></div>
+    <div>Também tenho conteúdo</div>
+    <div></div>
+
+    <hr>
+    <h1>:has</h1>
+    <div>
+        Sou o conteúdo da div
+        <p>Sou um parágrafo da div</p>
+    </div>
     
+    <script>
+        // Inicio do jQuery
+        $(function(){
+            jQuery("div:contains('João')").css("border", "2px solid red")
+            jQuery("div:empty").css("border", " 5px solid green").html("Agora nao sou uma div vazia")
+        })
+    </script>
 </body>
 </html>
