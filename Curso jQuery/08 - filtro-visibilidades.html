@@ -24,7 +24,9 @@
     <script>
         //Inicio jQuery.
         $(function(){
-            jQuery
+            jQuery("div:visible").css("color", "red")
+
+            jQuery("p:hidden").css({"border":"2px solid blue","padding":"20px"}).show(6000)
         })
     </script>
     
