@@ -19,7 +19,7 @@
 		<div class="resultado"></div>
 	</div>
 
-	<div class="voltar-topo" style="display: block; float: right; position: fixed; bottom: 0px; right: 0px; padding: 14px; margin: 10px; background: #C3C3C3; border-radius: 5px; cursor: pointer;" title="Voltar ao Topo">
+	<div class="voltar-topo" style="display: none; float: right; position: fixed; bottom: 0px; right: 0px; padding: 14px; margin: 10px; background: #C3C3C3; border-radius: 5px; cursor: pointer;" title="Voltar ao Topo">
 		<img src="/Imagens/home.png" alt="Voltar Topo">
 	</div>
 
@@ -37,6 +37,17 @@
 		jQuery(window).resize(function(){
 			jQuery("div.resultado").html(`Width=> ${jQuery(window).width()} px <br> Height=> ${jQuery(window).height()} px`)			
 		})
+
+		jQuery(window).scroll(function(){
+			//alert(jQuery(window).scrollTop())
+			var topo = jQuery(window).scrollTop()
+			if(topo >= 300){
+				jQuery("div.voltar-topo").show()
+			}else{
+				jQuery("div.voltar-topo").hide()
+			}
+		})
+		
 	</script>
 </body>
 </html>
