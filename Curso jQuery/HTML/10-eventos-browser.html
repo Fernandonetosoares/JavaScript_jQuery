@@ -15,6 +15,8 @@
 
 	<div class="div-com-scroll" style="height: 1500px">
 		<img src="/Imagens/Capaa.jfif" alt="proxys" id="capa">
+
+		<div class="resultado"></div>
 	</div>
 
 	<div class="voltar-topo" style="display: block; float: right; position: fixed; bottom: 0px; right: 0px; padding: 14px; margin: 10px; background: #C3C3C3; border-radius: 5px; cursor: pointer;" title="Voltar ao Topo">
@@ -29,6 +31,8 @@
 			})
 			.attr("src","/Imagens/sem-imagem.jpg")
 		})
+		
+		jQuery("div.resultado").html(`Width=> ${jQuery(window).width()} px <br> Height=> ${jQuery(window).height()} px`)
 	</script>
 </body>
 </html>
