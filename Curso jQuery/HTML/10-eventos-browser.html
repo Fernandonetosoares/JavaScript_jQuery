@@ -33,6 +33,10 @@
 		})
 		
 		jQuery("div.resultado").html(`Width=> ${jQuery(window).width()} px <br> Height=> ${jQuery(window).height()} px`)
+
+		jQuery(window).resize(function(){
+			jQuery("div.resultado").html(`Width=> ${jQuery(window).width()} px <br> Height=> ${jQuery(window).height()} px`)			
+		})
 	</script>
 </body>
 </html>
