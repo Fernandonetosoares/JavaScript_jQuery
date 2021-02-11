@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos de Browser - Curso jQuery Samurai EspecializaTi</title>
+
+	<link rel="stylesheet" href="/CSS/style.css">
+
+	<script src="/JS/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<h1 class="title">
+		Eventos de Browser [.error, .width, .height, .resize, .scroll]
+	</h1>
+
+	<div class="div-com-scroll" style="height: 1500px">
+		<img src="/Imagens/Capaa.jfif" alt="proxys" id="capa">
+	</div>
+
+	<div class="voltar-topo" style="display: block; float: right; position: fixed; bottom: 0px; right: 0px; padding: 14px; margin: 10px; background: #C3C3C3; border-radius: 5px; cursor: pointer;" title="Voltar ao Topo">
+		<img src="/Imagens/home.png" alt="Voltar Topo">
+	</div>
+
+	<script>
+		//Inicio do jQuery :-)
+		$(function(){
+			$("#capa").on ('error' ,function(){
+				
+			})
+			.attr("src","/Imagens/sem-imagem.jpg")
+		})
+	</script>
+</body>
+</html>
