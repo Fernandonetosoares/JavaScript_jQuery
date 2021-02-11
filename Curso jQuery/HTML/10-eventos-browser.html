@@ -37,16 +37,23 @@
 		jQuery(window).resize(function(){
 			jQuery("div.resultado").html(`Width=> ${jQuery(window).width()} px <br> Height=> ${jQuery(window).height()} px`)			
 		})
-
+		
+		var divVoltar = jQuery("div.voltar-topo")
 		jQuery(window).scroll(function(){
 			//alert(jQuery(window).scrollTop())
 			var topo = jQuery(window).scrollTop()
 			if(topo >= 300){
-				jQuery("div.voltar-topo").show()
+				divVoltar.show()
 			}else{
-				jQuery("div.voltar-topo").hide()
+				divVoltar.hide()
 			}
+
+			divVoltar.click(function(){
+				//alert("voltar ao topo")
+				$("html , body").animate({scrollTop:"0"})
+			})
 		})
+
 		
 	</script>
 </body>
