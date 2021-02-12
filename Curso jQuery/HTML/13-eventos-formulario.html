@@ -60,8 +60,14 @@
 
 	<script>
 		$(function(){
-			
-		});
+			jQuery("form").submit(function(){
+				alert("O formulário foi submetido")
+
+				return false
+			})
+
+			jQuery(":text")
+		})
 	</script>
 </body>
 </html>
