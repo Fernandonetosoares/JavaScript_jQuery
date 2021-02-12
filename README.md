@@ -40,4 +40,37 @@
 <img src="https://logodownload.org/wp-content/uploads/2017/10/jquery-logo.png" height="80">
 
 <a href="https://www.udemy.com/course/draft/811834/learn/lecture/5279644#overview" target="_blank" rel="external">Curso JavaScript + jQuery</a>
+<ol>
+    <li>Apresentação; 
+    <li>Seletores;
+        <ol>
+            <li>Seletores básicos;
+            <li>Seletores de atributo;
+            <li>Seletores de filtro;
+                <ol>
+                    <li>Seletores de filtro básicos;
+                    <li>Seletores de filtro de conteúdo;
+                </ol>
+            <li>Seletores de elementos filho;
+             <li>Seletores  de formulário;
+              <li>Seletores hierárquicos; 
+        </ol>
+    <li>Filtro de visibilidade;    
+    <li>Eventos;
+        <ol>
+            <li>Eventos de carregamento;
+            <li>Eventos de browser;
+            <li>Eventos de mouse;
+            <li>Eventos de teclado;
+            <li>Eventos de formulário;
+            <li>Eventos de objetos;
+        </ol>
+    <li>Efeitos;
+        <ol>
+            <li>Efeitos básicos;
+            <li>Efeitos fadings;
+            <li>Efeitos de deslizamento(slide);
+            <li>Efeitos de animação;
+        </ol>
+</ol>
 
