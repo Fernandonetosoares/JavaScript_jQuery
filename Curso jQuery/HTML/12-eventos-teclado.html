@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos de Carregamento - Curso jQuery Samurai EspecializaTi</title>
+
+	<link rel="stylesheet" href="/CSS/style.css">
+
+	<script src="/JS/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<h1 class="title">
+		Eventos de Teclado [.keydown(), .keypress(), .keyup()]
+	</h1>
+
+
+	<div>
+		<textarea name="texto" id="texto" cols="50" rows="12"></textarea>
+		<div class="total"></div>
+	</div>
+
+
+	<script>
+		$(function(){
+			jQuery("#texto").keydown(function(){
+				//alert("Evento keydown foi disparado")
+			})
+			jQuery("#texto").keypress(function(){
+				//alert("Evento keypress foi disparado")
+			})
+			jQuery("#texto").keyup(function(){
+				//alert(jQuery(this).val().length)
+				var valorTexto = jQuery(this).val()
+
+				var totalCaracteresDigitados = valorTexto.length
+
+			jQuery(".total").text(totalCaracteresDigitados)
+			var max = 20
+			
+			if(totalCaracteresDigitados > max){
+				jQuery(this).val(valorTexto.substr(0, max))
+
+			}
+
+			})
+
+			
+
+		});
+	</script>
+</body>
+</html>
