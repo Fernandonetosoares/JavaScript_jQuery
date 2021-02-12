@@ -20,7 +20,7 @@
 				<input type="text" name="nome" placeholder="Informe o texto">
 			</div>
 
-			<select name="estado"> 
+			<select name="estado" id="estado"> 
 				<option value="">Selecione o estado</option>
 				<option value="ac">Acre</option>
 				<option value="al">Alagoas</option> 
@@ -74,7 +74,7 @@
 			})
 
 			jQuery("div.texto").focusin(function(){
-				jQuery(this).css("border", "2px solid red")
+				//jQuery(this).css("border", "2px solid red")
 			})
 
 			jQuery(":input").blur(function(){
@@ -89,9 +89,18 @@
 				*/	
 			})
 			jQuery(":input").focusout(function(){
-				jQuery(this).css("border", "2px solid yellow")
+				//jQuery(this).css("border", "2px solid yellow")
 			})
+			
+			jQuery("#estado").change(function(){
+				//alert(jQuery(this).val())
 
+				if(jQuery(this).val() == ""){
+					jQuery(this).css("border", "2px solid red")
+				}else{
+					jQuery(this).css("border", "2px solid blue")
+				}
+			})
 		})
 	</script>
 </body>
