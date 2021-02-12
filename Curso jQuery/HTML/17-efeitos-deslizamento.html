@@ -29,6 +29,17 @@
 			jQuery(".slideup").click(function(){
 				manipular.slideUp(3000)
 			})
+
+			jQuery(".slidedown").click(function(){
+				manipular.slideDown(3000)
+			})
+
+			jQuery(".slidetoggle").click(function(){
+				manipular.css("background", "blue")
+				manipular.slideToggle(3000, function(){
+					manipular.css("background", "red")
+				})
+			})
 		})
 	</script>
 
