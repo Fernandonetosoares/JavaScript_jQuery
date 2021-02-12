@@ -69,6 +69,29 @@
 			jQuery(":text").select(function(){
 				alert(jQuery(this).val())
 			})
+			jQuery(":input").focusin(function(){
+				//jQuery(this).css("border", "2px solid green")
+			})
+
+			jQuery("div.texto").focusin(function(){
+				jQuery(this).css("border", "2px solid red")
+			})
+
+			jQuery(":input").blur(function(){
+				/*
+				var valor = jQuery(this).val()
+
+				if( valor == ""){
+					jQuery(this).css("border", "2px solid red")
+				}else{
+					jQuery(this).css("border", "2px solid blue")
+				}
+				*/	
+			})
+			jQuery(":input").focusout(function(){
+				jQuery(this).css("border", "2px solid yellow")
+			})
+
 		})
 	</script>
 </body>
